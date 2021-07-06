@@ -1,0 +1,72 @@
+.banner-logo {
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 0.2%;
+}
+
+.banner-main p {
+    font: 700 7pt Montserrat Alternates, sans-serif;
+    color: #04013B;
+    position: absolute;
+    top: 13%;
+    left: 38%;
+}
+
+.banner-arrow {
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    border: solid #FF485A;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner-menu {
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    left: 12%;
+}
+
+/*RESPONSIVIDADE TABLET*/
+@media screen and (min-width: 768px) {
+    .banner-logo {
+        width: 20%;
+        left: 40%;
+    }
+
+    .banner-main p {
+        top: 14.5%;
+        left: 44%;
+    }
+
+    .banner-arrow, .banner-menu {
+        width: 6%;
+        top: 6%;
+    }
+}
+
+/*RESPONSIVIDADE DESKTOP*/
+@media screen and (min-width: 1440px) {
+    .banner-logo {
+        top: -2%;
+    }
+
+    .banner-main p {
+        top: 24%;
+        left: 45%;
+        font-size: 11pt;
+    }
+
+    .banner-menu {
+        display: none;
+    }
+
+    .banner-arrow {
+        width: 4%;
+        left: 8%;
+        top: 12%
+    }
+}

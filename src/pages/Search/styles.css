@@ -1,0 +1,160 @@
+.form {
+    margin-top: 30%;
+    background-color: white;
+}
+
+#search-box, #order, #option {
+    background-color: #b5d6e7;
+}
+
+#search-box {
+    margin: 5% 0 2% 1%;
+    width: 85%;
+}
+
+.button-or-input {
+    margin-left:1%;
+    margin-top:1%;
+    padding:2%;
+    font-size:10pt;
+    text-align: center;  
+    border-radius: 25px;
+    border: 1pt solid;
+    outline: none;  
+    cursor:pointer;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+#order-button{
+    background-color: #FFBBC0;
+    width: 20%;
+}
+
+#reset-button{
+    background-color: #C4C4C4;
+    width: 20%;
+}
+
+#option {
+    width: 25%;
+}
+
+.search-button {
+    width: 10%;
+    border: none;
+    padding:2%;
+    border-radius: 50%;
+    background-color: #FF485A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 2%;
+}
+
+.search-icon {
+    width: 75%;
+    background-color: #FF485A;
+}
+
+#category-button{
+    display: none;
+}
+
+/*RESPONSIVIDADE TABLET*/
+@media screen and (min-width: 768px) {
+    .form {
+        margin-top: 15%;
+    }
+
+    #search-box {
+        margin: 2% 0 2% 5%;
+        width: 80%;
+    }
+
+    .button-or-input {
+        padding:1.5%;
+        margin-bottom: 2%;
+        width: 20%;
+    }
+
+    #order-button{
+        width: 12%;
+        margin-left: 2%;
+    }
+
+    #reset-button{
+        width: 12%;
+        margin-left: 17%;
+    }
+
+    #option {
+        width: 15%;
+        margin: 0 0 2% 2%;
+    }
+
+    #order {
+        margin: 0 0 2% 5%;
+    }
+
+    .search-button {
+        width: 6%;
+        padding:1%;
+        position: absolute;
+        top:19.5%;
+        right: 4%;
+    }
+}
+
+/*RESPONSIVIDADE DESKTOP*/
+@media screen and (min-width: 1440px) {
+    .form {
+        margin-top: 14%;
+    }
+
+    #search-box {
+        margin: 1% 0 1% 2%;
+        width: 90%;
+    }
+
+    .button-or-input {
+        padding:0.8%;
+        font-size: 11pt;
+    }
+
+    #order-button{
+        width: 10%;
+    }
+
+    #reset-button{
+        width: 10%;
+        margin-left: 25%;
+    }
+
+    #option {
+        width: 10%;
+        margin: 0 0 2% 2%;
+    }
+
+    #order {
+        width: 14%;
+        margin: 0 0 2% 2%;
+    }
+
+    .search-button {
+        width: 3%;
+        position: relative;
+        right: -1%;
+    }
+
+    .search-icon {
+        width: 100%;
+    }
+
+    #category-button{
+        display: inline;
+        width: 15%;
+        background-color: #FF485A;
+        margin-left: 2%;
+    }
+}

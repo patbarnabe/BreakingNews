@@ -1,0 +1,68 @@
+* {
+    background-color: #E6F9FF;
+}
+
+.home-logo {
+    width: 85%;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    cursor: pointer;
+}
+
+.home-click {
+    width: 12%;
+    position: absolute;
+    top: 54%;
+    left: 72%;
+    cursor: pointer;
+}
+
+.home-main p {
+    font: 700 12pt Montserrat Alternates, sans-serif;
+    color: #04013B;
+    position: absolute;
+    top: 55%;
+    left: 28%;
+    cursor: pointer;
+}
+
+/*RESPONSIVIDADE TABLET*/
+@media screen and (min-width: 768px) {
+    .home-logo {
+        width: 55%;
+        left: 20%;
+    }
+
+    .home-main p {
+        top: 64%;
+        left: 38%;
+    }
+
+    .home-click {
+        width: 8%;
+        top: 63%;
+        left: 60%;
+    }
+}
+
+/*RESPONSIVIDADE DESKTOP*/
+@media screen and (min-width: 1440px) {
+    .home-logo {
+        top: 21%;
+        width: 30%;
+        left: 32%;
+    }
+
+    .home-main p {
+        top: 59%;
+        left: 41.5%;
+        font-size: 14pt;
+    }
+
+    .home-click {
+        width: 5%;
+        top: 58%;
+        left: 55%;
+    }
+}
