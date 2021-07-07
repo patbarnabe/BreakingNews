@@ -8,7 +8,7 @@ import './styles.css'
 const Banner = () => {
     return (
         <div className="banner-main">
-            <a rel="noreferrer"><img className="banner-menu" src={Menu} alt="Logo do Breaking News"/></a>
+            <img className="banner-menu" src={Menu} alt="Logo do Breaking News"/>
             <div>
                 <img className="banner-logo" src={Logo} alt="Ícone do Menu Sanduíche"/>
                 <p> notícias para você</p>
