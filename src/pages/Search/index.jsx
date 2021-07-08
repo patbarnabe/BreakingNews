@@ -57,8 +57,8 @@ const Search = () => {
                                 
                                 <div className="flip-card-news-back">
                                     <p><span>Data/Hora de Publicação:</span> {news.publishedAt}</p>
-                                    <p><span>Link:</span> {news.url}</p>
-                                    <p><span>Conteúdo:</span> {news.content}</p>
+                                    <p><span>Link:</span> <a href={news.url} target="_blank" rel="noreferrer"><u>{news.url}</u></a></p>
+                                    <p><span>Conteúdo:</span> {news.content} <i>(veja mais no link acima)</i></p>
                                 </div>   
 
                             </div>   

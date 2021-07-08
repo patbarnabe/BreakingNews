@@ -42,8 +42,9 @@ const Headlines = () => {
                                     
                                     <div className="flip-card-headlines-back">
                                         <p><span>Data/Hora de Publicação:</span> {headline.publishedAt}</p>
-                                        <p><span>Link:</span> {headline.url}</p>
-                                        <p><span>Conteúdo:</span> {headline.content}</p>
+                                        <p><span>Link:</span> <a href={headline.url} target="_blank" rel="noreferrer"><u>{headline.url}</u></a>
+                                        </p>
+                                        <p><span>Conteúdo:</span> {headline.content} <i>(veja mais no link acima)</i></p>
                                     </div>   
                                 </div>  
                             </div>  

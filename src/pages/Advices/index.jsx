@@ -26,18 +26,28 @@ function Advices() {
         setClick(advices)
     }
 
+    function refreshPage(){ 
+        window.location.reload(); 
+    }
+
     return (
         <>
         <Banner/> 
 
         <Link to="/search"><img className="banner-arrow" src={Arrow} alt="Ícone de Seta"/></Link> 
 
-        <section>
+        <section className="advices-main">
             <h2 className="advices-title"><span>►</span> FRASES DO DIA <span>◄</span></h2>
-            <img src="https://picsum.photos/500" alt="Fotos Aleatórias"/>
-            <h3 className="advices-text">{advices.advice}</h3>
-            <button className="advices-btn" onClick={handleClick}>Clique aqui para mudar a frase</button>
-            <p>Ou atualize a página para mudar a imagem</p>
+            <div className="advices-card">
+                <img src="https://picsum.photos/500" alt="Fotos Aleatórias"/>
+                <h3 className="advices-text">"{advices.advice}"</h3>
+            </div>
+
+            <div className="advices-infos"> 
+                <button className="phrase-btn" onClick={handleClick}>Clique aqui para mudar somente a frase</button>
+                <p>OU</p>
+                <button type="button" className="img-btn" onClick={ refreshPage }>Clique aqui para mudar o texto e a imagem</button>
+            </div>
         </section>
 
         <Footer/>

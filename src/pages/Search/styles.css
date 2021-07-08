@@ -3,13 +3,15 @@
     background-color: white;
 }
 
-#search-box, #order, #option {
-    background-color: #b5d6e7;
-}
-
 #search-box {
     margin: 5% 0 2% 1%;
     width: 98%;
+    background-color: #b5d6e7;
+    border-color:#1d8ec7;
+}
+
+#search-box:hover {
+    background-color: #69bde7;
 }
 
 .button-or-input {
@@ -26,19 +28,29 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 30%;
     margin-bottom: 5%;
+    border: 1pt solid;
 }
 
 
 #advice-button{
     background-color: #C4C4C4;
     width: 47%;
+    border-color:#252525;
 }
 
+#advice-button:hover {
+    background-color: #858585;
+}
 
 #headlines-button{
     width: 50%;
     background-color: #FF485A;
     margin-left: 1%;
+    border-color:#940211;
+}
+
+#headlines-button:hover {
+    background-color: #fc1d33;
 }
 
 #headlines-button:hover, #advice-button:hover {
@@ -67,7 +79,7 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    background-color: #E6F9FF;
+    background-color: #d2f1fa;
     border-radius: 30px;
 }
 
@@ -120,6 +132,10 @@ span {
 .description-news{
     text-align: justify;
     margin: 0 5% 0 5%;
+}
+
+u {
+    text-decoration: underline;
 }
 
 
