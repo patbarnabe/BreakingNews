@@ -13,16 +13,16 @@ body {
 .home-click {
     width: 12%;
     position: absolute;
-    top: 54%;
+    top: 57%;
     left: 72%;
     cursor: pointer;
 }
 
 .home-main p {
-    font: 700 12pt Montserrat Alternates, sans-serif;
+    font: 700 12pt Montserrat, sans-serif;
     color: #04013B;
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 28%;
     cursor: pointer;
 }

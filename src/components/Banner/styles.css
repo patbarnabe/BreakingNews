@@ -2,21 +2,21 @@
     width: 40%;
     position: absolute;
     left: 30%;
-    top: 0.2%;
+    top: 0%;
 }
 
 .banner-main p {
-    font: 700 7pt Montserrat Alternates, sans-serif;
+    font: 700 7pt Montserrat, sans-serif;
     color: #04013B;
     position: absolute;
-    top: 13%;
+    top: 15.5%;
     left: 38%;
 }
 
 .banner-arrow {
     width: 10%;
     position: absolute;
-    top: 5%;
+    top: 6%;
     left: 80%;
     border: solid #FF485A;
     border-radius: 50%;
@@ -26,8 +26,11 @@
 .banner-menu {
     width: 10%;
     position: absolute;
-    top: 5%;
+    top: 6%;
     left: 12%;
+    border: solid #FF485A;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*RESPONSIVIDADE TABLET*/

@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react'
 import Axios from 'axios'
+import { Link } from 'react-router-dom'
 import './styles.css'
 import Banner from '../../components/Banner'
 import Footer from '../../components/Footer'
-
 
 const Search = () => {
 
     const [news, setNews] = useState([])
     const [searchFilter, setSearchFilter] = useState([])
     const [search, setSearch] = useState('')
+    
     
     useEffect(() => {
 
@@ -40,36 +41,37 @@ const Search = () => {
                     <input type ="text" id="search-box" className="button-or-input" placeholder="Pesquise uma notícia..." onChange={e=>{setSearch(e.target.value)}}/>
                 
                     <select id="order" className="button-or-input">
-                        <option selected disable>Selecione</option>
+                        <option disable="true">Selecione</option>
                         <option> Alfabética </option>
                         <option> Data </option>
                         <option> Outra Coisa </option>
                     </select>
 
                     <select id="option" className="button-or-input" >
-                        <option selected disable>Ordem</option>
+                        <option disable="true">Ordem</option>
                         <option>Crescente</option>
                         <option>Decrescente</option>      
                     </select>
 
                     <button id="order-button" className="button-or-input">Ordenar</button>
 
-                    <button id="category-button" className="button-or-input">Categorias</button>
-
                     <button id="reset-button" className="button-or-input">Limpar</button>
+
+                    <Link to="/headlines">
+                    <button id="headlines-button" className="button-or-input"><span>Manchetes do Dia</span></button></Link>
 
                     {searchFilter.map(news=> (
 
                         <div className="news-card">
-                            <div className="flip-card"> 
-                                <div className="flip-card-front">
+                            <div className="flip-card-news"> 
+                                <div className="flip-card-news-front">
                                     <h2>{news.title}</h2>
                                     <img src={news.urlToImage} alt={news.title}/>
                                     <p><span>Fonte:</span> {news.source.name}</p>
-                                    <p className="description"> {news.description}</p>
+                                    <p className="description-news"> {news.description}</p>
                                 </div>
                                 
-                                <div class="flip-card-back">
+                                <div className="flip-card-news-back">
                                     <p><span>Data/Hora de Publicação:</span> {news.publishedAt}</p>
                                     <p><span>Link:</span> {news.url}</p>
                                     <p><span>Conteúdo:</span> {news.content}</p>
@@ -87,35 +89,3 @@ const Search = () => {
 }
 
 export default Search
-
-
-    // const [headlines, setHeadlines] = useState([])
-
-
-    // useEffect(() => {
-
-    //     const getHeadlines = async () => {
-    //         const response = await Axios.get('https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=495880a89383495391dd2ea834e2c2d1')
-    //         const data = await response.data
-    //         setNews(data.articles)
-    //     }
-    //     getHeadlines()
-        
-    // }, [])
-
-
-                    {/* {headlines.map(headline => (
-                        <div className="card-headlines"> 
-                        <h2>MANCHETES</h2>
-                        <h3>{headline.title}</h3>
-                        <img src={headline.urlToImage} alt={headline.title}/>
-                        
-                        <div class="infos">
-                            <p><span>Fonte:</span> {headline.source.name}</p>
-                            <p><span>Descrição:</span> {headline.description}</p>
-                            <p><span>Data/Hora de Publicação:</span> {headline.publishedAt}</p>
-                            <p><span>Link:</span> {headline.url}</p>
-                            <p><span>Conteúdo:</span> {headline.content}</p>
-                        </div>   
-                    </div>    
-                    ))} */}
