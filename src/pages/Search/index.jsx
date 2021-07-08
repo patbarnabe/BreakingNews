@@ -11,7 +11,6 @@ const Search = () => {
     const [searchFilter, setSearchFilter] = useState([])
     const [search, setSearch] = useState('')
     
-    
     useEffect(() => {
 
         const getData = async () => {
@@ -39,26 +38,11 @@ const Search = () => {
             <section className="menu">
                 <form className="form">
                     <input type ="text" id="search-box" className="button-or-input" placeholder="Pesquise uma notícia..." onChange={e=>{setSearch(e.target.value)}}/>
-                
-                    <select id="order" className="button-or-input">
-                        <option disable="true">Selecione</option>
-                        <option> Alfabética </option>
-                        <option> Data </option>
-                        <option> Outra Coisa </option>
-                    </select>
-
-                    <select id="option" className="button-or-input" >
-                        <option disable="true">Ordem</option>
-                        <option>Crescente</option>
-                        <option>Decrescente</option>      
-                    </select>
-
-                    <button id="order-button" className="button-or-input">Ordenar</button>
-
-                    <button id="reset-button" className="button-or-input">Limpar</button>
 
                     <Link to="/headlines">
-                    <button id="headlines-button" className="button-or-input"><span>Manchetes do Dia</span></button></Link>
+                    <button id="headlines-button" className="button-or-input"><span>Manchetes Diárias</span></button></Link>
+
+                    <Link to="/advices"><button id="advice-button" className="button-or-input"><span>Frases do Dia</span></button></Link>
 
                     {searchFilter.map(news=> (
 

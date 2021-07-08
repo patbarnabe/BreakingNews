@@ -33,9 +33,9 @@
     width: 20%;
 }
 
-#reset-button{
+#advice-button{
     background-color: #C4C4C4;
-    width: 20%;
+    width: 47%;
 }
 
 #option {
@@ -50,7 +50,7 @@
 #headlines-button{
     width: 50%;
     background-color: #FF485A;
-    margin-left: 24%;
+    margin-left: 1%;
 }
 
 .news-card {
@@ -145,7 +145,7 @@ span {
         margin-left: 2%;
     }
 
-    #reset-button{
+    #advice-button{
         width: 12%;
         margin-left: 17%;
     }
@@ -180,7 +180,7 @@ span {
         width: 10%;
     }
 
-    #reset-button{
+    #advice-button{
         width: 10%;
         margin-left: 25%;
     }
