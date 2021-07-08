@@ -9,7 +9,7 @@
 
 #search-box {
     margin: 5% 0 2% 1%;
-    width: 85%;
+    width: 98%;
 }
 
 .button-or-input {
@@ -42,16 +42,6 @@
     width: 25%;
 }
 
-.search-button {
-    width: 10%;
-    border: none;
-    padding:2%;
-    border-radius: 50%;
-    background-color: #FF485A;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 2%;
-}
-
 .search-icon {
     width: 75%;
     background-color: #FF485A;
@@ -61,6 +51,75 @@
     display: none;
 }
 
+.news-card {
+    width: 90%;
+    height: 550px;
+    perspective: 1000px; 
+    margin: 0 0 20% 5%;
+}
+
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: #E6F9FF;
+    border-radius: 30px;
+}
+
+.news-card:hover .flip-card {
+    transform: rotateY(180deg);
+  }
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flip-card-front img {
+    width: 90%;
+}
+
+.flip-card-front h2 {
+    font-size: 15pt;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flip-card-back p{
+    font-size: 11pt;
+    margin: 8%;
+    text-align: justify;
+    word-wrap: break-word
+}
+
+span {
+    font-weight: bold;
+}
+
+.description{
+    text-align: justify;
+    margin: 0 5% 0 5%;
+}
+
+
 /*RESPONSIVIDADE TABLET*/
 @media screen and (min-width: 768px) {
     .form {
@@ -68,7 +127,7 @@
     }
 
     #search-box {
-        margin: 2% 0 2% 5%;
+        margin: 2% 0 2% 10%;
         width: 80%;
     }
 
@@ -94,15 +153,7 @@
     }
 
     #order {
-        margin: 0 0 2% 5%;
-    }
-
-    .search-button {
-        width: 6%;
-        padding:1%;
-        position: absolute;
-        top:19.5%;
-        right: 4%;
+        margin: 0 0 2% 10%;
     }
 }
 
@@ -113,7 +164,7 @@
     }
 
     #search-box {
-        margin: 1% 0 1% 2%;
+        margin: 2% 0 1% 5%;
         width: 90%;
     }
 
@@ -138,13 +189,7 @@
 
     #order {
         width: 14%;
-        margin: 0 0 2% 2%;
-    }
-
-    .search-button {
-        width: 3%;
-        position: relative;
-        right: -1%;
+        margin: 0 0 2% 5%;
     }
 
     .search-icon {
