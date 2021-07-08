@@ -34,7 +34,7 @@ function Advices() {
 
         <section>
             <h2 className="advices-title"><span>►</span> FRASES DO DIA <span>◄</span></h2>
-            <img src="https://picsum.photos/500"/>
+            <img src="https://picsum.photos/500" alt="Fotos Aleatórias"/>
             <h3 className="advices-text">{advices.advice}</h3>
             <button className="advices-btn" onClick={handleClick}>Clique aqui para mudar a frase</button>
             <p>Ou atualize a página para mudar a imagem</p>

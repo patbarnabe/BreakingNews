@@ -28,29 +28,29 @@
     margin-bottom: 5%;
 }
 
-#order-button{
-    background-color: #FFBBC0;
-    width: 20%;
-}
 
 #advice-button{
     background-color: #C4C4C4;
     width: 47%;
 }
 
-#option {
-    width: 25%;
-}
-
-.search-icon {
-    width: 75%;
-    background-color: #FF485A;
-}
 
 #headlines-button{
     width: 50%;
     background-color: #FF485A;
     margin-left: 1%;
+}
+
+#headlines-button:hover, #advice-button:hover {
+    animation:shake 0.5s infinite;
+}
+
+@keyframes shake{
+    0%{transform: translate(0px 0px)}
+    25%{transform: translate(5px, 0px)}
+    50%{transform: translate(0px, 5px)}
+    75%{transform: translate(-5px, 0px)}
+    100%{transform: translate(0px, 0px)}
 }
 
 .news-card {

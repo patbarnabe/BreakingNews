@@ -18,6 +18,10 @@ body {
     cursor: pointer;
 }
 
+.home-click:hover {
+    animation:shake 0.5s infinite;
+}
+
 .home-main p {
     font: 700 12pt Montserrat, sans-serif;
     color: #04013B;
@@ -25,6 +29,14 @@ body {
     top: 58%;
     left: 28%;
     cursor: pointer;
+}
+
+@keyframes shake{
+    0%{transform: translate(0px 0px)}
+    25%{transform: translate(5px, 0px)}
+    50%{transform: translate(0px, 5px)}
+    75%{transform: translate(-5px, 0px)}
+    100%{transform: translate(0px, 0px)}
 }
 
 /*RESPONSIVIDADE TABLET*/

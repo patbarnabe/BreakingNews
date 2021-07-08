@@ -7,9 +7,9 @@ import './styles.css'
 const Banner = () => {
     return (
         <div className="banner-main">
-            <Link to="/"><img className="banner-menu" src={Home} alt="Logo do Breaking News"/></Link>
+            <Link to="/"><img className="banner-menu" src={Home} alt="Ícone da Página Inicial"/></Link>
             <div>
-                <img className="banner-logo" src={Logo} alt="Ícone do Menu Sanduíche"/>
+                <img className="banner-logo" src={Logo} alt="Logo do Breaking News"/>
                 <p> notícias para você</p>
             </div>
             
