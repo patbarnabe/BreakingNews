@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# Breaking News :blue_heart:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Projeto Final desenvolvido na 18ª Semana de aulas do curso de Desenvolvimento Web Front-End da 10ª Turma da Reprograma :purple_heart:
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+* [1. Definição do Produto](#dart-definição-do-produto)
+* [2. Protótipos](#pencil2-histórias-de-usuários)
+* [3. Como usar?](#art-protótipos)
+* [4. Tecnologias utilizadas](#gear-como-usar)
+* [5. Estrutura dos Principais Arquivos](#link-links-para-saber-mais-sobre-pokémons)
+* [6. Resultados](#busts_in_silhouette-testes-de-usabilidade)
+* [7. Sobre a desenvolvedora](#robot-tecnologias-utilizadas)
 
-### `yarn start`
+---
+## :dart: Definição do Produto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O [Breaking News](...) foi desenvolvido com o objetivo disponibilizar as últimas notícias do Brasil para o usuário. Para isso, esta aplicação tem a missão de prover informações atualizada aos usuários de forma dinâmica e divertida para que estas sejam visualizadas diariamente.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O seu design foi desenvolvido em mobile first e também é responsivo para desktop(1366px) e tablet (768px), o que proporcional a versatilidade desejada pelos usuários. A sua idealização foi feita a partir de alta fidelidade que nortearam a construção do site de acordo com as necessidades dos clientes. Nele, é possível buscar as notícias pelos seus títulos, acessar uma outra página exclusiva para as Manchetes Diárias e ainda se divertir com a página reservada para as Frases do Dia onde são exibidas mensagens e imagem de forma dinâmica.
 
-### `yarn test`
+Por fim, é importante ressaltar que esse projeto foi construído com base no planejamento realizado no [Trello](https://trello.com/b/yWKMWvpd/projeto-final).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+## :art: Protótipos
+* ####  Mobile (375px)
+![img](./src/assets/news-mobile.png)
 
-### `yarn build`
+* #### Tablet (768px)
+![img](./src/assets/news-tablet.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* #### Desktop (1366px)
+![img](./src/assets/news-desktop1.png)
+![img](./src/assets/news-desktop2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
+## :gear: Como usar?
+- Primeiramente o usuário acessará a página inicial, na qual, o acesso para à página de notícias ocorre ao clicar na logo, no texto ou na imagem de click;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Na página de notícias:
+- O usuário é capaz de buscar uma notícia pelo seu respectivo título no campo "Pesquise uma notícia"; 
+- Ao passar o mouse em cima dos cards, os mesmos irão girar e informações adicionais serão exibidas. Quando isso ocorre, o usuário pode visualizar a **data e hora da publicação**, o **link** oficial das notícias, bem como um trecho do **conteúdo** da notícia;
+- Uma página de **Manchetes Diárias** pode ser acessada ao clicar no respectivo botão e mostrará as principais notícias do dia, além de possuir a mesma interação de informações adicionais que são exibidas atrás dos cartões das notícias ao passar o mouse por cima;
+- Outra página de **Frases do Dia**, também acessível por seu respectivo botão, mostrará imagens e frase de forma dinâmica. Além disso, o usuário poderá mudar a imagem e a frase, ou apenas mudar a frase, apenas clicando nos botões de *Clique aqui para mudar somente a frase* ou *Clique aqui para mudar a frase e a imagem*.
 
-### `yarn eject`
+---
+## :robot: Tecnologias utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Ferramenta | Descrição |
+| --- | --- |
+| `HTML 5` | Linguagem de marcação |
+| `CSS3` | Linguagem de estilização |
+| `JavaScript` |  Linguagem de programação interpretada estruturada|
+| `React` | Biblioteca de JavaScript|
+| `Node.js` | Software de execução de códigos JavaScript|
+| `Git e GitHub` | Sistemas de controle de versões distribuídos|
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :file_folder: Estrutura dos Principais Arquivos
+```
+📁 projeto-final-news
+|
+|-  📁 src
+|    |
+|    |- 📁 assets
+|    |     |- 📄 images...
+|    |
+|    |- 📁 components
+|    |     |- 📁 Banner 
+|    |     |       |- 📄 index.js
+|    |     |       |- 📄 styles.css
+|    |     |- 📁 Footer 
+|    |            |- 📄 index.js
+|    |            |- 📄 styles.css
+|    |
+|    |- 📁 pages
+|    |     |- 📁 Advices 
+|    |     |       |- 📄 index.js
+|    |     |       |- 📄 styles.css
+|    |     |- 📁 Headlines 
+|    |     |       |- 📄 index.js
+|    |     |       |- 📄 styles.css
+|    |     |- 📁 Home 
+|    |     |       |- 📄 index.js
+|    |     |       |- 📄 styles.css
+|    |     |- 📁 Search 
+|    |            |- 📄 index.js
+|    |            |- 📄 styles.css
+|    |
+|    |- 📁 routes
+|    |     |- 📄 Routes.js 
+|    |
+|    |- 📄 App.js
+|    |- 📄 index.js
+|    |- 📄 global.css
+|    |- 📄 README.md
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+```
+## ✔️ Resultados
+* ####  Mobile First (375px)
+![img](./src/assets/result-mobile-home.png)
+![img](./src/assets/result-mobile-search.png)
+![img](./src/assets/result-mobile-headlines.png)
+![img](./src/assets/result-mobile-advices.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* #### Tablet (768px)
+![img](./src/assets/result-tablet-home.png)
+![img](./src/assets/result-tablet-search.png)
+![img](./src/assets/result-tablet-headlines.png)
+![img](./src/assets/result-tablet-advices.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* #### Desktop (1366px)
+![img](./src/assets/result-desktop-home.png)
+![img](./src/assets/result-desktop-search.png)
+![img](./src/assets/result-desktop-headlines.png)
+![img](./src/assets/result-desktop-advices.png)
 
-### Code Splitting
+---
+## :woman_technologist: Sobre a desenvolvedora
+### Patrícia Barnabé
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [LinkedIn](https://www.linkedin.com/in/patriciabarnabe)
+- E-mail: patbarnabe5@gmail.com
