@@ -7,7 +7,7 @@ section {
     width: 90%;
     height: 550px;
     perspective: 1000px; 
-    margin: 0 0 20% 5%;
+    margin: 0 0 10% 5%;
 }
 
 .flip-card-headlines {
@@ -19,6 +19,7 @@ section {
     transform-style: preserve-3d;
     background-color: #E6F9FF;
     border-radius: 30px;
+    border: 1pt solid #b5d6e7;
 }
 
 .headlines-card:hover .flip-card-headlines {
@@ -42,9 +43,10 @@ section {
 
 .flip-card-headlines-front img {
     width: 90%;
+    border: 1px solid black;
 }
 
-.flip-card-headlines-front h3 {
+.flip-card-headlines-front h2 {
     font-size: 15pt;
     margin:8%;
 }
@@ -81,4 +83,57 @@ span {
 
 .headlines-title span {
     color: #FF485A;
+}
+
+/*RESPONSIVIDADE TABLET*/
+@media screen and (min-width: 768px) {
+    section {
+        margin-top: 15%;
+    }
+
+    .headlines-card {
+        width: 43%;
+        display: inline-block;
+        margin: 0 0 5% 5%;
+    }
+
+    .banner-arrow {
+        width: 6%;
+    }
+}
+
+/*RESPONSIVIDADE DESKTOP*/
+@media screen and (min-width: 1440px) {
+    section {
+        margin-top: 11%;
+    }
+
+    .banner-arrow {
+        width: 4%;
+        top: 5%;
+    }
+
+    .headlines-card {
+        width: 27%;
+        display: inline-block;
+        margin: 0 0 5% 5%;
+        height: 700px;
+    }
+
+    .headlines-title {
+        padding: 3%;
+        font-size: 30pt;
+    }
+
+    .description-headlines{
+        font-size: 14pt;
+    }
+
+    .flip-card-headlines-back p{
+        font-size: 14pt;
+    }
+
+    .flip-card-headlines-front h2 {
+        font-size: 16pt;
+    }
 }

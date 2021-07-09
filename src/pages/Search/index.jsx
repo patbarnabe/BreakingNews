@@ -12,13 +12,18 @@ const Search = () => {
     const [search, setSearch] = useState('')
     
     useEffect(() => {
-
-        const getData = async () => {
-            const response = await Axios.get('https://newsapi.org/v2/top-headlines?country=br&apiKey=495880a89383495391dd2ea834e2c2d1')
-            const data = await response.data
-            setNews(data.articles)
+        
+        try {
+            const getData = async () => {
+                const response = await Axios.get('https://newsapi.org/v2/top-headlines?country=br&apiKey=495880a89383495391dd2ea834e2c2d1')
+                const data = await response.data
+                setNews(data.articles)
+            }
+            getData()
         }
-        getData()
+        catch {
+            throw new Error()
+        }
         
     }, [])
 

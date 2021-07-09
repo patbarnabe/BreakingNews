@@ -13,12 +13,17 @@ function Advices() {
 
     useEffect(() => {
 
-        const getAdvices = async () => {
-            const response = await Axios.get('https://api.adviceslip.com/advice')
-            const data = await response.data
-            setAdvices(data.slip)
+        try {
+            const getAdvices = async () => {
+                const response = await Axios.get('https://api.adviceslip.com/advice')
+                const data = await response.data
+                setAdvices(data.slip)
+            }
+            getAdvices()
         }
-        getAdvices()
+        catch {
+            throw new Error()
+        }
         
     }, [click])
 
@@ -46,7 +51,7 @@ function Advices() {
             <div className="advices-infos"> 
                 <button className="phrase-btn" onClick={handleClick}>Clique aqui para mudar somente a frase</button>
                 <p>OU</p>
-                <button type="button" className="img-btn" onClick={ refreshPage }>Clique aqui para mudar o texto e a imagem</button>
+                <button type="button" className="img-btn" onClick={ refreshPage }>Clique aqui para mudar a frase e a imagem</button>
             </div>
         </section>
 

@@ -57,7 +57,7 @@
         left: 44%;
     }
 
-    .banner-arrow, .banner-menu {
+    .banner-menu {
         width: 6%;
         top: 6%;
     }
@@ -66,22 +66,20 @@
 /*RESPONSIVIDADE DESKTOP*/
 @media screen and (min-width: 1440px) {
     .banner-logo {
-        top: -2%;
+        top: -0.5%;
+        width: 15%;
+        left: 42%;
     }
 
     .banner-main p {
-        top: 24%;
+        top: 10.5%;
         left: 45%;
-        font-size: 11pt;
+        font-size: 10pt;
     }
 
     .banner-menu {
-        display: none;
+        width: 4%;
+        top: 5%;
     }
 
-    .banner-arrow {
-        width: 4%;
-        left: 8%;
-        top: 12%
-    }
 }

@@ -4,10 +4,10 @@
 }
 
 #search-box {
-    margin: 5% 0 2% 1%;
+    margin: 7% 0 2% 1%;
     width: 98%;
     background-color: #b5d6e7;
-    border-color:#1d8ec7;
+    border: 1pt solid #1d8ec7;
 }
 
 #search-box:hover {
@@ -16,26 +16,24 @@
 
 .button-or-input {
     margin-left:1%;
-    margin-top:1%;
+    margin-top:2%;
     padding:2%;
     font-size:10pt;
     text-align: center;  
     border-radius: 25px;
-    border: 1pt solid;
     outline: none;  
     cursor:pointer;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 30%;
-    margin-bottom: 5%;
-    border: 1pt solid;
+    margin-bottom: 10%;
 }
 
 
 #advice-button{
     background-color: #C4C4C4;
     width: 47%;
-    border-color:#252525;
+    border: 1pt solid #525151;
 }
 
 #advice-button:hover {
@@ -46,7 +44,7 @@
     width: 50%;
     background-color: #FF485A;
     margin-left: 1%;
-    border-color:#940211;
+    border: 1pt solid #940211;
 }
 
 #headlines-button:hover {
@@ -69,7 +67,7 @@
     width: 90%;
     height: 550px;
     perspective: 1000px; 
-    margin: 0 0 20% 5%;
+    margin: 0 0 10% 5%;
 }
 
 .flip-card-news {
@@ -81,6 +79,7 @@
     transform-style: preserve-3d;
     background-color: #d2f1fa;
     border-radius: 30px;
+    border: 1pt solid #b5d6e7;
 }
 
 .news-card:hover .flip-card-news {
@@ -104,6 +103,7 @@
 
 .flip-card-news-front img {
     width: 90%;
+    border: 1px solid black;
 }
 
 .flip-card-news-front h2 {
@@ -146,73 +146,77 @@ u {
     }
 
     #search-box {
-        margin: 2% 0 2% 10%;
+        margin: 4% 0 2% 10%;
         width: 80%;
     }
 
     .button-or-input {
         padding:1.5%;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
         width: 20%;
     }
 
-    #order-button{
-        width: 12%;
-        margin-left: 2%;
-    }
-
     #advice-button{
-        width: 12%;
-        margin-left: 17%;
+        width: 38%;
+        margin-left: 4%;
     }
 
-    #option {
-        width: 15%;
-        margin: 0 0 2% 2%;
+    #headlines-button{
+        width: 38%;
+        margin-left: 10%;
     }
 
-    #order {
-        margin: 0 0 2% 10%;
+    .news-card {
+        width: 43%;
+        display: inline-block;
+        margin: 0 0 5% 5%;
     }
 }
 
 /*RESPONSIVIDADE DESKTOP*/
 @media screen and (min-width: 1440px) {
     .form {
-        margin-top: 14%;
+        margin-top: 11%;
     }
 
     #search-box {
         margin: 2% 0 1% 5%;
-        width: 90%;
+        width: 50%;
     }
 
     .button-or-input {
         padding:0.8%;
         font-size: 11pt;
+        margin-bottom: 3%;
     }
 
-    #order-button{
-        width: 10%;
+    #headlines-button{
+        width: 20%;
+        margin-left: 2%;
     }
 
     #advice-button{
-        width: 10%;
-        margin-left: 25%;
+        width: 15%;
+        margin-left: 2%;
     }
 
-    #option {
-        width: 10%;
-        margin: 0 0 2% 2%;
+    .news-card {
+        width: 27%;
+        display: inline-block;
+        margin: 0 0 5% 5%;
+        height: 700px;
     }
 
-    #order {
-        width: 14%;
-        margin: 0 0 2% 5%;
+    .flip-card-news-front h2 {
+        font-size: 16pt;
     }
 
-    .search-icon {
-        width: 100%;
+    .flip-card-news-back p{
+        font-size: 14pt;
+    }
+
+    .description-news{
+        font-size: 14pt;
     }
 
 }

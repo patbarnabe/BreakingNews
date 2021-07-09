@@ -12,12 +12,17 @@ const Headlines = () => {
 
     useEffect(() => {
 
-        const getHeadlines = async () => {
-            const response = await Axios.get('https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=495880a89383495391dd2ea834e2c2d1')
-            const data = await response.data
-            setHeadlines(data.articles)
+        try {
+            const getHeadlines = async () => {
+                const response = await Axios.get('https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=495880a89383495391dd2ea834e2c2d1')
+                const data = await response.data
+                setHeadlines(data.articles)
+            }
+            getHeadlines()
         }
-        getHeadlines()
+        catch {
+            throw new Error()
+        }  
         
     }, [])
     
@@ -34,7 +39,7 @@ const Headlines = () => {
                             <div className="headlines-card">
                                 <div className="flip-card-headlines"> 
                                     <div className="flip-card-headlines-front">
-                                        <h3>{headline.title}</h3>
+                                        <h2>{headline.title}</h2>
                                         <img src={headline.urlToImage} alt={headline.title}/>
                                         <p><span>Fonte:</span> {headline.source.name}</p>
                                         <p className="description-headlines">{headline.description}</p>

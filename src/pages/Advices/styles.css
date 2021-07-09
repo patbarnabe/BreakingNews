@@ -19,7 +19,7 @@
     height: 450px;
     margin: 5%;
     box-shadow: black 0.5em 0.5em 0.3em;
-    border: solid thick #d2f1fa;
+    border: solid thick #C4C4C4;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
@@ -38,6 +38,7 @@
 .advices-card img {
     width: 90%;
     border-radius: 1em;
+    border: 1px solid black;
 }
 
 .advices-card h3 {
@@ -94,6 +95,70 @@
     animation:shake 0.5s infinite;
     background-color: #a0f766;
 }
+
+/*RESPONSIVIDADE TABLET*/
+@media screen and (min-width: 768px) {
+
+    .advices-main {
+        height: 800px;
+    }
+
+    .advices-card {
+        width: 60%;
+        margin: 5% 20%;
+    }
+    
+    .advices-card img {
+        width: 70%;
+        border-radius: 1em;
+        border: 1px solid black;
+    }
+
+    .advices-infos {
+        top: 720px;
+    }
+
+    .phrase-btn, .img-btn {
+        width: 50%;
+    }
+}
+
+/*RESPONSIVIDADE DESKTOP*/
+@media screen and (min-width: 1440px) {
+    .advices-main {
+        height: 1030px;
+    }
+
+    .advices-title{
+        padding: 2% 1% 0% 1%;
+        font-size: 30pt;
+    }
+
+    .advices-card {
+        width: 50%;
+        margin: 2% 25% 5% 25%;
+        height: 650px;
+    }
+
+    .advices-card img {
+        width: 65%;
+    }
+
+    .advices-infos {
+        top: 960px;
+    }
+
+    .phrase-btn, .img-btn {
+        width: 40%;
+        padding:1%;
+        font-size: 12pt;
+    }
+
+    .advices-infos p {
+        font-size:20pt;
+    }
+}
+
 
 
 
