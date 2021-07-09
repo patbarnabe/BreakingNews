@@ -72,9 +72,10 @@
     }
 
     .banner-main p {
-        top: 12.5%;
+        top: 16.5%;
         left: 45%;
         font-size: 10pt;
+        position: fixed;
     }
 
     .banner-menu {

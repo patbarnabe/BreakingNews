@@ -67,14 +67,16 @@ body {
     }
 
     .home-main p {
-        top: 63%;
+        top: 74%;
         left: 45%;
         font-size: 16pt;
+        position: fixed;
     }
 
     .home-click {
         width: 6%;
-        top: 63%;
+        top: 72%;
         left: 62%;
+        position: fixed;
     }
 }
