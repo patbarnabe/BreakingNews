@@ -1,16 +1,16 @@
-# Breaking News :blue_heart:
+# Breaking News :newspaper::mega:
 
 ## Projeto Final desenvolvido na 18ª Semana de aulas do curso de Desenvolvimento Web Front-End da 10ª Turma da Reprograma :purple_heart:
 
 ## Índice
 
 * [1. Definição do Produto](#dart-definição-do-produto)
-* [2. Protótipos](#pencil2-histórias-de-usuários)
-* [3. Como usar?](#art-protótipos)
-* [4. Tecnologias utilizadas](#gear-como-usar)
-* [5. Estrutura dos Principais Arquivos](#link-links-para-saber-mais-sobre-pokémons)
-* [6. Resultados](#busts_in_silhouette-testes-de-usabilidade)
-* [7. Sobre a desenvolvedora](#robot-tecnologias-utilizadas)
+* [2. Protótipos](#art-protótipos)
+* [3. Como usar?](#gear-como-usar)
+* [4. Tecnologias utilizadas](#robot-tecnologias-utilizadas)
+* [5. Estrutura dos Principais Arquivos](#file_folder-estrutura-dos-principais-arquivos)
+* [6. Resultados](#%EF%B8%8F-resultados)
+* [7. Sobre a desenvolvedora](#woman_technologist-sobre-a-desenvolvedora)
 
 ---
 ## :dart: Definição do Produto
