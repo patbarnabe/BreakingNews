@@ -1,6 +1,8 @@
 .advices-main {
     width: 100%;
     height: 700px;
+    background-color: white;
+    margin-top: 30%;
 }
 
 .advices-title {
@@ -100,12 +102,14 @@
 @media screen and (min-width: 768px) {
 
     .advices-main {
-        height: 800px;
+        height: 750px;
+        margin-top: 15%;
+
     }
 
     .advices-card {
         width: 60%;
-        margin: 5% 20%;
+        margin: 0% 20%;
     }
     
     .advices-card img {
@@ -115,47 +119,69 @@
     }
 
     .advices-infos {
-        top: 720px;
+        top: 670px;
     }
 
     .phrase-btn, .img-btn {
         width: 50%;
+    }
+
+    .advices-title {
+        padding: 2%;
     }
 }
 
 /*RESPONSIVIDADE DESKTOP*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
     .advices-main {
-        height: 1030px;
+        height: 510px;
+        margin-top: 7.7%;
     }
 
     .advices-title{
-        padding: 2% 1% 0% 1%;
-        font-size: 30pt;
+        padding: 1% 1% 0% 1%;
+        font-size: 27pt;
     }
 
     .advices-card {
         width: 50%;
-        margin: 2% 25% 5% 25%;
-        height: 650px;
+        margin: 1% 25% 5% 25%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .advices-card img {
-        width: 65%;
+        width: 45%;
+        margin: 2%;
+    }
+
+    .advices-text {
+       margin-right: 2%;
     }
 
     .advices-infos {
-        top: 960px;
+        top: 82%;
+        background-color: white;
     }
 
     .phrase-btn, .img-btn {
-        width: 40%;
-        padding:1%;
+        width: 30%;
+        padding:0.5%;
         font-size: 12pt;
     }
 
+    .phrase-btn {
+        margin-bottom: 0.2%;
+    }
+
+    .img-btn {
+        margin-top: 0.2%;
+    }
+
     .advices-infos p {
-        font-size:20pt;
+        font-size:11pt;
     }
 }
 

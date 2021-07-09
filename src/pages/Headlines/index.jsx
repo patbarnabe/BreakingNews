@@ -32,7 +32,7 @@ const Headlines = () => {
 
             <Link to="/search"><img className="banner-arrow" src={Arrow} alt="Ícone de Seta"/></Link>    
 
-            <section>
+            <section className="container">
                 <h2 className="headlines-title"><span>►</span> MANCHETES <span>◄</span></h2>
                     {headlines.map(headline => (
 

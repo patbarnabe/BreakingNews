@@ -174,9 +174,9 @@ u {
 }
 
 /*RESPONSIVIDADE DESKTOP*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
     .form {
-        margin-top: 11%;
+        margin-top: 7.7%;   
     }
 
     #search-box {
@@ -187,7 +187,7 @@ u {
     .button-or-input {
         padding:0.8%;
         font-size: 11pt;
-        margin-bottom: 3%;
+        margin-bottom: 2%;
     }
 
     #headlines-button{
@@ -204,19 +204,20 @@ u {
         width: 27%;
         display: inline-block;
         margin: 0 0 5% 5%;
-        height: 700px;
+        height: 600px;
     }
 
     .flip-card-news-front h2 {
-        font-size: 16pt;
+        font-size: 15pt;
+        margin: -6% 0 -12% 0;
+        padding: 3%;
     }
 
-    .flip-card-news-back p{
-        font-size: 14pt;
+    .flip-card-news-back p, .description-news{
+        font-size: 13pt;
     }
 
-    .description-news{
-        font-size: 14pt;
+    .flip-card-news-front p {
+        margin-top: -15%;
     }
-
 }

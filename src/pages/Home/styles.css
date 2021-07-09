@@ -59,15 +59,15 @@ body {
 }
 
 /*RESPONSIVIDADE DESKTOP*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
     .home-logo {
-        top: 29%;
+        top: 15%;
         width: 40%;
         left: 32%;
     }
 
     .home-main p {
-        top: 74%;
+        top: 65%;
         left: 45%;
         font-size: 16pt;
         position: fixed;
@@ -75,8 +75,10 @@ body {
 
     .home-click {
         width: 6%;
-        top: 72%;
-        left: 62%;
+        top: 64%;
+        left: 60%;
         position: fixed;
     }
 }
+
+

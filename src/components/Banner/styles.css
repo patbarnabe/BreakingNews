@@ -64,23 +64,22 @@
 }
 
 /*RESPONSIVIDADE DESKTOP*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
     .banner-logo {
-        top: -0.5%;
-        width: 15%;
-        left: 42%;
+        top: -1.5%;
+        width: 12%;
+        left: 45%;
     }
 
     .banner-main p {
-        top: 16.5%;
-        left: 45%;
-        font-size: 10pt;
-        position: fixed;
+        top: 13%;
+        left: 47.5%;
+        font-size: 9pt;
     }
 
     .banner-menu {
-        width: 4%;
-        top: 5%;
+        width: 3%;
+        top: 4.5%;
     }
 
 }
