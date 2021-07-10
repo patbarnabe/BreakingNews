@@ -14,7 +14,7 @@ const Headlines = () => {
 
         try {
             const getHeadlines = async () => {
-                const response = await Axios.get('http://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=495880a89383495391dd2ea834e2c2d1')
+                const response = await Axios.get('https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=495880a89383495391dd2ea834e2c2d1')
                 const data = await response.data
                 setHeadlines(data.articles)
             }
