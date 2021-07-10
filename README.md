@@ -4,13 +4,13 @@
 
 ## Índice
 
-* [1. Definição do Produto](#dart-definição-do-produto)
-* [2. Protótipos](#art-protótipos)
-* [3. Como usar?](#gear-como-usar)
-* [4. Tecnologias utilizadas](#robot-tecnologias-utilizadas)
-* [5. Estrutura dos Principais Arquivos](#file_folder-estrutura-dos-principais-arquivos)
-* [6. Resultados](#%EF%B8%8F-resultados)
-* [7. Sobre a desenvolvedora](#woman_technologist-sobre-a-desenvolvedora)
+1. [Definição do Produto](#dart-definição-do-produto)
+2. [Protótipos](#art-protótipos)
+3. [Como usar?](#gear-como-usar)
+4. [Tecnologias utilizadas](#robot-tecnologias-utilizadas)
+5. [Estrutura dos Principais Arquivos](#file_folder-estrutura-dos-principais-arquivos)
+6. [Resultados](#%EF%B8%8F-resultados)
+7. [Sobre a desenvolvedora](#woman_technologist-sobre-a-desenvolvedora)
 
 ---
 ## :dart: Definição do Produto
