@@ -39,6 +39,20 @@ body {
     100%{transform: translate(0px, 0px)}
 }
 
+/*RESPONSIVIDADE MOBILE LARGE*/
+@media screen and (min-width: 425px) {
+    .home-main p {
+        top: 58%;
+        left: 33%;
+    }
+
+    .home-click {
+        width: 12%;
+        top: 58%;
+        left: 72%;
+    }
+}
+
 /*RESPONSIVIDADE TABLET*/
 @media screen and (min-width: 768px) {
     .home-logo {
@@ -55,6 +69,26 @@ body {
         width: 8%;
         top: 63%;
         left: 60%;
+    }
+}
+
+/*RESPONSIVIDADE LAPTOP*/
+@media screen and (min-width: 1024px) {
+    .home-logo {
+        width: 45%;
+        left: 25%;
+        top: 20%;
+    }
+
+    .home-main p {
+        top: 62%;
+        left: 40%;
+    }
+
+    .home-click {
+        width: 6%;
+        top: 62%;
+        left: 56%;
     }
 }
 

@@ -15,7 +15,8 @@
 ---
 ## :dart: Definição do Produto
 
-O [Breaking News](...) foi desenvolvido com o objetivo disponibilizar as últimas notícias do Brasil para o usuário. Para isso, esta aplicação tem a missão de prover informações atualizada de forma dinâmica e divertida para que estas sejam visualizadas diariamente.
+O ***Breaking News*
+** foi desenvolvido com o objetivo disponibilizar as últimas notícias do Brasil para o usuário. Para isso, esta aplicação tem a missão de prover informações atualizada de forma dinâmica e divertida para que estas sejam visualizadas diariamente.
 
 O seu design foi desenvolvido em mobile first e também é responsivo para desktop(1366px) e tablet (768px), o que proporcional a versatilidade desejada pelos usuários. A sua idealização foi feita a partir de alta fidelidade que nortearam a construção do site de acordo com as necessidades dos clientes. Nele, é possível buscar as notícias pelos seus títulos, acessar uma outra página exclusiva para as Manchetes Diárias e ainda se divertir com a página reservada para as Frases do Dia onde são exibidas mensagens e imagem de forma dinâmica.
 
