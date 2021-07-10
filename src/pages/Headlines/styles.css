@@ -5,7 +5,7 @@
 
 .headlines-card {
     width: 90%;
-    height: 550px;
+    height: 700px;
     perspective: 1000px; 
     margin: 0 0 10% 5%;
 }
@@ -122,7 +122,6 @@ span {
         width: 27%;
         display: inline-block;
         margin: 0 0 5% 5%;
-        height: 600px;
     }
 
     .headlines-title {
