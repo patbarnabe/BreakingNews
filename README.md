@@ -1,4 +1,4 @@
-# Breaking News :newspaper::mega:
+<h1 align="center">Breaking News :newspaper::mega:</p>
 
 ## Projeto Final desenvolvido na 18ª Semana de aulas do curso de Desenvolvimento Web Front-End da 10ª Turma da Reprograma :purple_heart:
 
